@@ -1,19 +1,14 @@
 <template>
     <div class="input-wrap">
-        <input type="text" v-model="todoState.todo">
-        <button>Create</button>
+        <input type="text" v-model="todo">
+        <button @click="">Create</button>
     </div>
-    <p>{{ todo }}</p>
 </template>
 
 <script setup>
-import {ref, reactive} from "vue";
+import {ref} from "vue";
 
 const todo = ref("Testing");
-
-const todoState = reactive({
-  todo: "Testing"
-});
 </script>
 
 <style lang="scss" scoped>
